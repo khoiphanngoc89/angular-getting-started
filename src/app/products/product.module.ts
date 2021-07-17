@@ -5,6 +5,7 @@ import { ConvertToSpacePipe } from '../shared/convert-to-spaces.pipe';
 import { RouterModule } from '@angular/router';
 import { ProductDetailGuard } from './product-detail.guard';
 import { SharedModule } from '../shared/shared.module';
+import { ProductNewComponent } from './product-new/product-new.component';
 
 
 
@@ -13,6 +14,7 @@ import { SharedModule } from '../shared/shared.module';
     ProductListComponent,
     ProductDetailComponent,
     ConvertToSpacePipe,
+    ProductNewComponent,
   ],
   imports: [
     RouterModule.forChild([

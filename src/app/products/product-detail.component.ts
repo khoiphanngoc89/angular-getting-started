@@ -22,7 +22,9 @@ export class ProductDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
+    const rawId = this.route.snapshot.paramMap.get('id')
+    if(!rawId) return;
+    const id = Number(rawId);
     this.pageTitle = `Product Detail: ${id}`;
 
   }
